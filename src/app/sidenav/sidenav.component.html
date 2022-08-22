@@ -4,7 +4,7 @@
   <button>
     <mat-icon>notifications_none</mat-icon>
   </button>
-  <div class="userInitials">KJ</div>
+  <div class="userInitials" (click)="toggleShowNoDataComponent()">KJ</div>
 </mat-toolbar>
 <mat-sidenav-container fxLayout="row wrap">
   <mat-sidenav mode="side" opened>
@@ -50,7 +50,7 @@
       <mat-icon>help</mat-icon>
       <span>Help</span>
     </button>
-    <div class="profile">
+    <div class="profile" (click)="toggleShowNoDataComponent()">
       <div class="userInitials">
         <p>KJ</p>
       </div>
@@ -59,7 +59,7 @@
   </mat-sidenav>
   <!-- Toggle between data and no data view -->
   <mat-sidenav-content>
-    <app-homepage></app-homepage>
-    <!-- <app-no-data></app-no-data> -->
+    <app-homepage [hidden]="hideNoDataComponent"></app-homepage>
+    <app-no-data [hidden]="hideNoDataComponent === false"></app-no-data>
   </mat-sidenav-content>
 </mat-sidenav-container>
