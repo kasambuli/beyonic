@@ -10,9 +10,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTableModule } from '@angular/material/table';
+import { NoDataComponent } from './no-data/no-data.component';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, HomepageComponent],
+  declarations: [AppComponent, SidenavComponent, HomepageComponent, NoDataComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

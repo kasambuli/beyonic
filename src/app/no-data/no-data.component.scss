@@ -81,6 +81,16 @@
     padding: 0px 0px 0px 20px;
     color: white;
 
+    .amount {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      span {
+        margin: 0px 100px 0px 0px;
+      }
+    }
+
     p {
       font-size: 16px;
       line-height: 19px;
@@ -151,21 +161,27 @@
   margin: 0px 0px 0px 70px;
 }
 
-table {
-  position: absolute;
-  width: 1350px;
-  bottom: 0%;
-  background: #FFFFFF;
-  border-radius: 10px;
-  height: 400px;
-  margin: 0px 0px 0px 70px;
+.noTransactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  td {
-    border: 0.5px #d9d9d8;
-    border-style: none none solid none;
+  img {
+    height: 100px;
+    width: 100px;
   }
 
-  th {
-    display: none;
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
   }
+}
+
+.recent {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  margin: 40px 40px 0px 0px
 }
