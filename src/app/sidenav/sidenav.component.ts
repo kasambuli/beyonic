@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
   constructor() {}
-
+  hideNoDataComponent: boolean = false;
+  toggleShowNoDataComponent() {
+    this.hideNoDataComponent = this.hideNoDataComponent ? false : true;
+  }
   ngOnInit(): void {}
 }
