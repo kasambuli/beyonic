@@ -1,0 +1,14 @@
+<div id="chart">
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [xaxis]="chartOptions.xaxis"
+    [dataLabels]="chartOptions.dataLabels"
+    [grid]="chartOptions.grid"
+    [stroke]="chartOptions.stroke"
+  ></apx-chart>
+  <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Incoming"></mat-tab>
+    <mat-tab label="Outgoing" disabled="true"> </mat-tab>
+  </mat-tab-group>
+</div>

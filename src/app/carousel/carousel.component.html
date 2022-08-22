@@ -1,0 +1,19 @@
+<div class="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div [hidden]="data" class="firstItem active">
+      <app-balance></app-balance>
+    </div>
+    <div class="secondItem">
+      <div [hidden]="data === false" class="graphCard">
+        <h5>Last 7 days</h5>
+        <app-chart></app-chart>
+      </div>
+    </div>
+  </div>
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button (click)="toggleShowData()"></button>
+    <button (click)="toggleShowData()"></button>
+  </div>
+</div>

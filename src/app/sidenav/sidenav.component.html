@@ -1,9 +1,19 @@
-<mat-sidenav-container>
+<mat-toolbar>
+  <img src="assets/images/logo.png" alt="logo" /> <span class="spacer"></span>
+
+  <button>
+    <mat-icon>notifications_none</mat-icon>
+  </button>
+  <div class="userInitials">KJ</div>
+</mat-toolbar>
+<mat-sidenav-container fxLayout="row wrap">
   <mat-sidenav mode="side" opened>
     <div class="logo">
-      <h1>beyonic</h1>
+      <img src="assets/images/blackLogo.png" alt="logo" />
     </div>
-    <span class="titles">YOUR ACCOUNT</span>
+    <div class="navTitles">
+      <p>YOUR ACCOUNT</p>
+    </div>
     <button mat-button class="menu-button">
       <mat-icon>home</mat-icon>
       <span>Home</span>
@@ -13,7 +23,7 @@
       <span>Transfer</span>
     </button>
     <button mat-button class="menu-button">
-      <mat-icon> bar_chart</mat-icon>
+      <mat-icon>bar_chart</mat-icon>
       <span>History</span>
     </button>
     <button mat-button class="menu-button">
@@ -28,7 +38,9 @@
       <mat-icon>view_agenda</mat-icon>
       <span>Billing</span>
     </button>
-    <span class="titles">SUPPORT</span>
+    <div class="navTitles">
+      <p>SUPPORT</p>
+    </div>
 
     <button mat-button class="menu-button">
       <mat-icon>help</mat-icon>
@@ -39,74 +51,15 @@
       <span>Help</span>
     </button>
     <div class="profile">
-      <mat-icon>help</mat-icon>
+      <div class="userInitials">
+        <p>KJ</p>
+      </div>
       <span>Kizito John</span>
     </div>
   </mat-sidenav>
+  <!-- Toggle between data and no data view -->
   <mat-sidenav-content>
-    <h1 class="greeting">Hi John,</h1>
-    <div class="cards">
-      <div class="balance">
-        <p>Balance</p>
-        <h1>9,485,760 <small>UGX</small></h1>
-        <p>Spent this week</p>
-        <h3>485,760 <small>UGX</small></h3>
-      </div>
-      <div class="actions">
-        <p>Quick Actions</p>
-        <div class="buttonContainer">
-          <button class="buttons">
-            <mat-icon>view_agenda</mat-icon>
-            <p>Top Up</p>
-          </button>
-          <button class="buttons">
-            <mat-icon> call_made</mat-icon>
-            <p>Send Money</p>
-          </button>
-          <button class="buttons">
-            <mat-icon> call_received</mat-icon>
-            <p>Collect</p>
-          </button>
-          <button class="buttons">
-            <mat-icon> vertical_align_bottom</mat-icon>
-            <p>Withdraw</p>
-          </button>
-        </div>
-      </div>
-    </div>
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-      <!-- Position Column -->
-      <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef>No.</th>
-        <td mat-cell *matCellDef="let element">
-          <mat-icon [innerHTML]="element.name"></mat-icon>
-        </td>
-      </ng-container>
-
-      <!-- Name Column -->
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef>Name</th>
-        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
-      </ng-container>
-
-      <!-- amount Column -->
-      <ng-container matColumnDef="amount">
-        <th mat-header-cell *matHeaderCellDef>amount</th>
-        <td mat-cell *matCellDef="let element">{{ element.amount }}</td>
-      </ng-container>
-
-      <!-- status Column -->
-      <ng-container matColumnDef="status">
-        <th mat-header-cell *matHeaderCellDef>status</th>
-        <td mat-cell *matCellDef="let element">{{ element.status }}</td>
-      </ng-container>
-      <ng-container matColumnDef="time">
-        <th mat-header-cell *matHeaderCellDef>time</th>
-        <td mat-cell *matCellDef="let element">{{ element.time }}</td>
-      </ng-container>
-
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    </table>
+    <app-homepage></app-homepage>
+    <!-- <app-no-data></app-no-data> -->
   </mat-sidenav-content>
 </mat-sidenav-container>

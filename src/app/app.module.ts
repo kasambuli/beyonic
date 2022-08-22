@@ -11,9 +11,27 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTableModule } from '@angular/material/table';
 import { NoDataComponent } from './no-data/no-data.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { ChartComponent } from './chart/chart.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { CarouselComponent } from './carousel/carousel.component';
+import { BalanceComponent } from './balance/balance.component';
+import { FooterComponent } from './footer/footer.component';
+import { ActionsComponent } from './actions/actions.component';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, HomepageComponent, NoDataComponent],
+  declarations: [
+    AppComponent,
+    SidenavComponent,
+    HomepageComponent,
+    NoDataComponent,
+    ChartComponent,
+    CarouselComponent,
+    BalanceComponent,
+    FooterComponent,
+    ActionsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +40,9 @@ import { NoDataComponent } from './no-data/no-data.component';
     MatIconModule,
     MatDividerModule,
     MatTableModule,
+    MatToolbarModule,
+    NgApexchartsModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,136 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 39px;    justify-content: space-between;
+}
+
+.greeting {
+    width: 133px;
+    height: 42px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 95px 0px 0px 0px;
+}
+
+table {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: auto;
+    margin: 100px 0px 50px 0px;
+
+    .positionColumn {
+        width: 8%;
+    }
+
+    td {
+        border: 0.5px #d9d9d8;
+        border-style: none none solid none;
+        padding: 10px 0px 10px 10px;
+
+        mat-icon {
+            border-radius: 50%;
+            background-color: white;
+            padding: 15px;
+            color: #4D4D4B;
+
+        }
+
+        .mat-icon.completed {
+            background-color: #CAECFF;
+        }
+
+        .mat-icon.pending {
+            border: 2.4px solid #CAECFF;
+        }
+
+        .mat-icon.failed {
+            border: 2.4px dotted #CAECFF;
+        }
+
+        .columnText {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        .columnText.completed {
+            color: #008F50;
+        }
+
+        .columnText.pending {
+            color: #F8A300;
+        }
+
+        .columnText.failed {
+            color: #D90C34;
+        }
+
+        .columnText.appearMobileView {
+            display: none;
+        }
+    }
+
+    th {
+        font-weight: 400;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: black;
+    }
+
+    .removeMobileView {
+        display: block;
+        font-weight: 500;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .greeting {
+        display: none;
+    }
+
+    .today {
+        display: block;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px;
+
+
+
+    }
+
+    mat-sidenav {
+        display: none;
+    }
+
+    .recent {
+        margin: 0px 0px 40px 10px;
+    }
+
+    table {
+        margin: 0px 0px 50px 0px;
+        background-color: #F5F5F5;
+
+        td {
+            .columnText.appearMobileView {
+                display: block;
+                font-weight: 500;
+            }
+        }
+
+        .columnText.removeMobileView {
+            display: none;
+        }
+
+    }
+
+
+}

@@ -1,2 +1,74 @@
-<!-- <app-sidenav></app-sidenav> -->
-<app-no-data></app-no-data>
+<h1 class="greeting">Hi John,</h1>
+
+<div class="cards">
+  <app-carousel></app-carousel>
+  <app-actions></app-actions>
+</div>
+<table mat-table [dataSource]="dataSource">
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef>Recent</th>
+    <td mat-cell *matCellDef="let element" class="positionColumn">
+      <mat-icon
+        [ngClass]="{
+          completed: element.status === 'Completed',
+          pending: element.status === 'Pending',
+          failed: element.status === 'Failed'
+        }"
+        >{{ element.position }}</mat-icon
+      >
+    </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Transactions</th>
+    <td mat-cell *matCellDef="let element">
+      <p class="columnText">
+        {{ element.name }}
+      </p>
+      <p class="columnText appearMobileView">
+        {{ element.amount }}
+      </p>
+    </td>
+  </ng-container>
+
+  <!-- amount Column -->
+  <ng-container matColumnDef="amount">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <p class="columnText removeMobileView">
+        {{ element.amount }}
+      </p>
+    </td>
+  </ng-container>
+
+  <!-- status Column -->
+  <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <p
+        [ngClass]="{
+          completed: element.status === 'Completed',
+          pending: element.status === 'Pending',
+          failed: element.status === 'Failed'
+        }"
+        class="columnText"
+      >
+        {{ element.status }}
+      </p>
+    </td>
+  </ng-container>
+  <ng-container matColumnDef="time">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <p class="columnText">
+        {{ element.time }}
+      </p>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+<app-footer></app-footer>
