@@ -12,6 +12,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatTableModule } from '@angular/material/table';
 import { NoDataComponent } from './no-data/no-data.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     SidenavComponent,
     HomepageComponent,
     NoDataComponent,
+    ChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatDividerModule,
     MatTableModule,
     MatToolbarModule,
+    NgApexchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

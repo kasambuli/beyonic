@@ -1,4 +1,4 @@
-.mat-sidenav-container {
+mat-sidenav-container {
   height: 100%;
 
   mat-sidenav {
@@ -74,13 +74,13 @@
           text-align: center;
           margin: 0px;
         }
-
       }
     }
 
   }
 
   mat-sidenav-content {
+    background-color: #f5f5f5;
     overflow-x: hidden;
     padding: 50px;
   }
@@ -100,10 +100,6 @@
     margin-top: 20px;
   }
 
-}
-
-.mat-sidenav-content {
-  background-color: #f5f5f5;
 }
 
 mat-toolbar {
@@ -141,12 +137,16 @@ mat-toolbar {
     display: flex;
   }
 
-  mat-sidenav {
-    display: none;
-  }
+  mat-sidenav-container {
+    mat-sidenav {
+      display: none;
+    }
 
-  .mat-sidenav-content {
-    background-color: white;
+    mat-sidenav-content {
+      background-color: white;
+      overflow-x: hidden;
+      padding: 5px;
+    }
   }
 
 }
