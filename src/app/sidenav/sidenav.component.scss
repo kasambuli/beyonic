@@ -129,9 +129,6 @@ mat-toolbar {
   }
 }
 
-@media screen and (max-width: 1025px) {}
-
-/* Mobile device styles */
 @media screen and (max-width: 480px) {
   mat-toolbar {
     display: flex;
@@ -143,7 +140,7 @@ mat-toolbar {
     }
 
     mat-sidenav-content {
-      background-color: white;
+      background-color: #F5F5F5;
       overflow-x: hidden;
       padding: 5px;
     }

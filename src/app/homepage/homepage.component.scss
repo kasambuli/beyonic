@@ -4,17 +4,6 @@
     margin-top: 39px;
     justify-content: space-between;
 
-    .graphCard {
-        h5 {
-            margin-left: 10px;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 16px;
-            margin-top: 10px;
-        }
-
-    }
-
     .actions {
         width: 597px;
         height: 256px;
@@ -117,14 +106,24 @@ table {
         .columnText.failed {
             color: #D90C34;
         }
+
+        .columnText.appearMobileView {
+            display: none;
+        }
     }
 
     th {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
         color: black;
-        border: 0px;
+    }
+
+    .removeMobileView {
+        display: block;
+        font-weight: 500;
+
     }
 
 }
@@ -145,6 +144,7 @@ table {
 
         .actions {
             width: auto;
+            background-color: #F5F5F5;
 
             .actionContainer {
                 .action {
@@ -169,7 +169,20 @@ table {
     }
 
     table {
-        margin: 0px;
+        margin: 0px 0px 50px 0px;
+        background-color: #F5F5F5;
+
+        td {
+            .columnText.appearMobileView {
+                display: block;
+                font-weight: 500;
+            }
+        }
+
+        .columnText.removeMobileView {
+            display: none;
+        }
+
     }
 
 

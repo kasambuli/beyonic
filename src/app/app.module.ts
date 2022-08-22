@@ -17,6 +17,7 @@ import { ChartComponent } from './chart/chart.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BalanceComponent } from './balance/balance.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BalanceComponent } from './balance/balance.component';
     ChartComponent,
     CarouselComponent,
     BalanceComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

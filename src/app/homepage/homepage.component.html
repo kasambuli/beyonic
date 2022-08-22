@@ -55,6 +55,9 @@
       <p class="columnText">
         {{ element.name }}
       </p>
+      <p class="columnText appearMobileView">
+        {{ element.amount }}
+      </p>
     </td>
   </ng-container>
 
@@ -62,7 +65,7 @@
   <ng-container matColumnDef="amount">
     <th mat-header-cell *matHeaderCellDef></th>
     <td mat-cell *matCellDef="let element">
-      <p class="columnText">
+      <p class="columnText removeMobileView">
         {{ element.amount }}
       </p>
     </td>
@@ -96,3 +99,4 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
+<app-footer></app-footer>
