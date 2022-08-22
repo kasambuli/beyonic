@@ -1,46 +1,7 @@
 .cards {
     display: flex;
     flex-direction: row;
-    margin-top: 39px;
-    justify-content: space-between;
-
-    .actions {
-        width: 597px;
-        height: 256px;
-        background: #ffffff;
-        border-radius: 10px;
-
-        p {
-            margin: 30px 0px 30px 40px;
-        }
-
-        .actionContainer {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-
-            .action {
-                a {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    mat-icon {
-                        padding: 20px 40px;
-                        background: #CAECFF;
-                        border-radius: 10px;
-                        border: 0px;
-
-                    }
-
-                    span {
-                        margin: 4px 0px 0px 0px;
-                    }
-                }
-
-            }
-        }
-    }
+    margin-top: 39px;    justify-content: space-between;
 }
 
 .greeting {
@@ -142,21 +103,7 @@ table {
         flex-direction: column;
         margin: 0px 0px 0px 0px;
 
-        .actions {
-            width: auto;
-            background-color: #F5F5F5;
 
-            .actionContainer {
-                .action {
-                    a {
-                        .mat-icon {
-                            padding: 10px 20px
-                        }
-                    }
-                }
-            }
-
-        }
 
     }
 

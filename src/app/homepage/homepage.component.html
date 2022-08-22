@@ -2,35 +2,7 @@
 
 <div class="cards">
   <app-carousel></app-carousel>
-  <div class="actions">
-    <p>Quick Actions</p>
-    <div class="actionContainer">
-      <div class="action">
-        <a>
-          <mat-icon>view_agenda</mat-icon>
-          <span>Top Up</span>
-        </a>
-      </div>
-      <div class="action">
-        <a>
-          <mat-icon> call_made</mat-icon>
-          <span>Send Money</span>
-        </a>
-      </div>
-      <div class="action">
-        <a>
-          <mat-icon> call_received</mat-icon>
-          <span>Collect</span>
-        </a>
-      </div>
-      <div class="action">
-        <a>
-          <mat-icon> vertical_align_bottom</mat-icon>
-          <span>Withdraw</span>
-        </a>
-      </div>
-    </div>
-  </div>
+  <app-actions></app-actions>
 </div>
 <table mat-table [dataSource]="dataSource">
   <!-- Position Column -->

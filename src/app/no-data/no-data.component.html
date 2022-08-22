@@ -2,40 +2,20 @@
 <h3 class="today">Today</h3>
 <div class="cards">
   <div class="balance">
-    <p>Balance</p>
-    <h1>0 <small>UGX</small></h1>
-    <div class="amount">
+    <h4>Balance</h4>
+    <h1>0 <span>UGX</span></h1>
+    <div class="transactionAmountsContainer">
       <span>
-        <p>Incoming</p>
-        <h3>0 <small>UGX</small></h3>
+        <h4>Incoming</h4>
+        <h3>0 <span>UGX</span></h3>
       </span>
-      <span>
-        <p>Outgoing</p>
-        <h3>0 <small>UGX</small></h3>
+      <span class="outgoingAmount">
+        <h4>Outgoing</h4>
+        <h3>0 <span>UGX</span></h3>
       </span>
     </div>
   </div>
-  <div class="actions">
-    <p>Quick Actions</p>
-    <div class="buttonContainer">
-      <button class="buttons">
-        <mat-icon>view_agenda</mat-icon>
-        <p>Top Up</p>
-      </button>
-      <button class="buttons">
-        <mat-icon> call_made</mat-icon>
-        <p>Send Money</p>
-      </button>
-      <button class="buttons">
-        <mat-icon> call_received</mat-icon>
-        <p>Collect</p>
-      </button>
-      <button class="buttons">
-        <mat-icon> vertical_align_bottom</mat-icon>
-        <p>Withdraw</p>
-      </button>
-    </div>
-  </div>
+  <app-actions></app-actions>
 </div>
 <p class="recent">Recent Transactions</p>
 <div class="noTransactions">
