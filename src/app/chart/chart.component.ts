@@ -35,11 +35,11 @@ export class ChartComponent implements OnInit {
       series: [
         {
           name: 'Desktops',
-          data: [50000, 25000, 75000, 60000, 100000],
+          data: [40000, 25000, 75000, 60000, 100000],
         },
       ],
       chart: {
-        height: 176,
+        height: 200,
         type: 'line',
         zoom: {
           enabled: false,

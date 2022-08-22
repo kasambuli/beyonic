@@ -14,6 +14,9 @@ import { NoDataComponent } from './no-data/no-data.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { ChartComponent } from './chart/chart.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { CarouselComponent } from './carousel/carousel.component';
+import { BalanceComponent } from './balance/balance.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,8 @@ import { ChartComponent } from './chart/chart.component';
     HomepageComponent,
     NoDataComponent,
     ChartComponent,
+    CarouselComponent,
+    BalanceComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { ChartComponent } from './chart/chart.component';
     MatTableModule,
     MatToolbarModule,
     NgApexchartsModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,36 +1,59 @@
-.balance {
-    width: 600px;
-    height: 256px;
-    background: linear-gradient(93.41deg, #006fab 0.82%, #00456b 96.94%);
-    border-radius: 8px;
-    padding: 10px 0px 0px 20px;
-    color: white;
-
-    h4 {
-        font-size: 16px;
-        line-height: 19px;
-        margin: 20px 0px 20px 0px;
-
+.balanceCard {
+    h5 {
+        display: none;
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
     }
 
-    h1 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 56px;
+    .balance {
+        width: 600px;
+        height: 256px;
+        background: linear-gradient(93.41deg, #006fab 0.82%, #00456b 96.94%);
+        border-radius: 8px;
+        padding: 10px 0px 0px 20px;
+        color: white;
 
-        span {
+        h4 {
             font-size: 16px;
+            line-height: 19px;
+            margin: 20px 0px 20px 0px;
+
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 33px;
+
+            span {
+                font-size: 12px;
+            }
         }
     }
+}
 
-    h3 {
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 33px;
+@media screen and (max-width: 480px) {
+    .balanceCard {
+        .balance {
+            width: auto;
+        }
 
-        span {
-            font-size: 12px;
+        h5 {
+            display: block;
         }
     }
 }

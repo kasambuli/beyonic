@@ -8,4 +8,8 @@ export class CarouselComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  data: boolean = false;
+  toggleShowData() {
+    this.data = this.data ? false : true;
+  }
 }
