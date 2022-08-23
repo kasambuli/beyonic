@@ -11,3 +11,5 @@
 ### Directions
 1. The requirements entailed creating a view with Transcations data and one without. Inorder to toggle between the two views, navigate to the round blue icon with the initials `KJ` and click to toggle between the two views.
 
+### Deployment
+Link to deployed website https://kasambuli.github.io/beyonic/
